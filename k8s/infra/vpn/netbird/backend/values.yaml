@@ -1,13 +1,13 @@
 auth:
-  authority: https://keycloak.stonegarden.dev/realms/homelab
+  authority: https://keycloak.optimcloud.com/realms/homelab
   audience: netbird
   device:
     provider: hosted
     audience: netbird
-    authority: https://keycloak.stonegarden.dev/realms/homelab
+    authority: https://keycloak.optimcloud.com/realms/homelab
     clientID: netbird
-    deviceAuthorizationEndpoint: https://keycloak.stonegarden.dev/realms/homelab/protocol/openid-connect/auth
-    tokenEndpoint: https://keycloak.stonegarden.dev/realms/homelab/protocol/openid-connect/token
+    deviceAuthorizationEndpoint: https://keycloak.optimcloud.com/realms/homelab/protocol/openid-connect/auth
+    tokenEndpoint: https://keycloak.optimcloud.com/realms/homelab/protocol/openid-connect/token
     scope: openid
     useIDToken: false
 
@@ -18,8 +18,8 @@ idp:
     name: netbird-backend-oidc-credentials
     key: clientSecret
   grantType: client_credentials
-  adminEndpoint: https://keycloak.stonegarden.dev/admin/realms/homelab
-  tokenEndpoint: https://keycloak.stonegarden.dev/realms/homelab/protocol/openid-connect/token
+  adminEndpoint: https://keycloak.optimcloud.com/admin/realms/homelab
+  tokenEndpoint: https://keycloak.optimcloud.com/realms/homelab/protocol/openid-connect/token
 
 management:
   image:
@@ -34,16 +34,16 @@ signal:
     tag: 0.32.0 # renovate: docker=docker.io/netbirdio/signal
   nodeSelector:
     topology.kubernetes.io/zone: abel
-  uri: netbird.stonegarden.dev:443
+  uri: netbird.optimcloud.com:443
   protocol: https
   ingress:
     enabled: false
 
 stun:
-  uri: stun:coturn.stonegarden.dev:3478
+  uri: stun:coturn.optimcloud.com:3478
 
 turn:
-  uri: turn:coturn.stonegarden.dev:3478
+  uri: turn:coturn.optimcloud.com:3478
   user: netbird
   secretKeyRef:
     name: netbird-turn-credentials

@@ -5,8 +5,8 @@ metadata:
   namespace: gateway
 spec:
   dnsNames:
-    - "*.stonegarden.dev"
-    - stonegarden.dev
+    - "*.optimcloud.com"
+    - optimcloud.com
   issuerRef:
     group: cert-manager.io
     kind: ClusterIssuer

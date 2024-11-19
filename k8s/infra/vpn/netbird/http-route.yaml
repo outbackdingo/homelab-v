@@ -10,7 +10,7 @@ spec:
     - name: internal
       namespace: gateway
   hostnames:
-    - "netbird.stonegarden.dev"
+    - "netbird.optimcloud.com"
   rules:
     - backendRefs:
         - name: netbird-dashboard

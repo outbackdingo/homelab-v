@@ -19,14 +19,14 @@ configMap:
   access_control:
     default_policy: 'two_factor'
     rules:
-      - domain_regex: '^.*\.stonegarden.dev$'
+      - domain_regex: '^.*\.optimcloud.com$'
         policy: 'two_factor'
 
   session:
     encryption_key: { secret_name: crypto }
     cookies:
       - subdomain: authelia
-        domain: stonegarden.dev
+        domain: optimcloud.com
 
   storage:
     encryption_key: { secret_name: crypto }
@@ -80,8 +80,8 @@ configMap:
           public: false
           authorization_policy: 'two_factor'
           redirect_uris:
-            - 'https://argocd.stonegarden.dev/auth/callback'
-            - 'https://argocd.stonegarden.dev/applications'
+            - 'https://argocd.optimcloud.com/auth/callback'
+            - 'https://argocd.optimcloud.com/applications'
           scopes: [ 'openid', 'groups', 'email', 'profile' ]
           userinfo_signed_response_alg: 'none'
           id_token_signed_response_alg: 'ES256'

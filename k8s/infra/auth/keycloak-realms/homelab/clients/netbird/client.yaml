@@ -11,12 +11,12 @@ spec:
     standardFlowEnabled: true
     directAccessGrantsEnabled: true
     oauth2DeviceAuthorizationGrantEnabled: true
-    baseUrl: "https://netbird.stonegarden.dev"
+    baseUrl: "https://netbird.optimcloud.com"
     validRedirectUris:
       - "http://localhost:53000"
-      - "https://netbird.stonegarden.dev/*"
+      - "https://netbird.optimcloud.com/*"
     validPostLogoutRedirectUris:
-      - "https://netbird.stonegarden.dev/*"
+      - "https://netbird.optimcloud.com/*"
     webOrigins:
       - "+"
     realmIdRef:

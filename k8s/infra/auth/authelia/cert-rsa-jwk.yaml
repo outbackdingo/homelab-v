@@ -5,7 +5,7 @@ metadata:
   namespace: gateway
 spec:
   dnsNames:
-    - authelia.stonegarden.dev
+    - authelia.optimcloud.com
   issuerRef:
     group: cert-manager.io
     kind: ClusterIssuer
